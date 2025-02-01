@@ -4,7 +4,8 @@ const PATH_URL_FOR_TWEETS = "https://twitter-v24.p.rapidapi.com";
 const X_RAPID_HOST_ID = "twitter-api45.p.rapidapi.com";
 const X_RAPID_HOST_TWEETS = "twitter-v24.p.rapidapi.com";
 
-const TWEET_MAX_TIME = 1000 * 60 * 60 * 24; // 10 minutes
+const TWEET_MAX_TIME = 1000 * 60 * 10; // 10 minutes
+
 export interface TweetsObject {
   id: string;
   content: string;
