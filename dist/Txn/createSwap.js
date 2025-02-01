@@ -13,6 +13,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createSwap = createSwap;
+// RAYDIUM EXCHANGE DOCS FOR SWAPING
+// https://docs.raydium.io/raydium/traders/trade-api
 const web3_js_1 = require("@solana/web3.js");
 const web3_js_2 = require("@solana/web3.js");
 const spl_token_1 = require("@solana/spl-token");

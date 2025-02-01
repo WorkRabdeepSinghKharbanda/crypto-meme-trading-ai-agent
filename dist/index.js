@@ -13,10 +13,14 @@ require('dotenv').config();
 const get_token_from_llm_1 = require("./LLM/get-token-from-llm");
 const get_tweets_1 = require("./twitter/get-tweets");
 const createSwap_1 = require("./Txn/createSwap");
+// const INFLUENCER_USERNAME = [
+//     'AltcoinGordon',
+//     'realDonaldTrump',
+//     'AltcoinPsycho',
+// ]
+// For  testing
 const INFLUENCER_USERNAME = [
-    'AltcoinGordon',
-    'realDonaldTrump',
-    'AltcoinPsycho'
+    'RabdeepSinghkh1'
 ];
 // Buy a coin
 function main(userNames) {
@@ -24,6 +28,7 @@ function main(userNames) {
         const SPAM_COUNT = 10;
         for (const userName of userNames) {
             const newTweets = yield (0, get_tweets_1.getTweets)(userName);
+            console.log('newTweets -> ', newTweets);
             for (const tweet of newTweets) {
                 const cryptoLLMResponse = yield (0, get_token_from_llm_1.getTokenFromLLM)(tweet.content);
                 if (cryptoLLMResponse.isBullish && cryptoLLMResponse.contractAddress) {
