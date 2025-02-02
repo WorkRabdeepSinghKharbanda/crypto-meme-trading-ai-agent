@@ -46,7 +46,7 @@ We aim to automate the detection and execution of profitable trades based on inf
 - Clone the repository:
 ```sh
 git clone https://github.com/WorkRabdeepSinghKharbanda/crypto-meme-trading-ai-agent.git
-cd ai-solana-trading-bot
+cd crypto-meme-trading-ai-agent
 ```
 
 - Install dependencies:
